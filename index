@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>休憩時間だからこそ、テンションをあげたい時に押すボタン</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
 
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="text-center alert" role="alert" id="app">
+  <h1>休憩時間だからこそ、<br>テンションをあげたい時に<br>押すボタン</h1>
+  
+  <p>
+    <div class="row my-5">
+       <div class="text-nowrap col-sm-6 mx-auto">
+        下のボタンを押して、「つかれたー！」と言ってみてください。<br>
+        （心の底から、気持ちを込めて言うことがポイントです。）
+       </div>
+    </div>
+
+    <button @click="listen" type="button" class="btn btn-success rounded-pill btn-lg"><b>{{ recogButton }}</b></button><br>
+    認識結果：{{ result }}
+  </p>
+  
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.umd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
